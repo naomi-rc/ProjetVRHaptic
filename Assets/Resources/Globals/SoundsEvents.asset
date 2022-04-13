@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123a139e9e6a60745bac88c3447dd45d, type: 3}
+  m_Name: SoundsEvents
+  m_EditorClassIdentifier: 
+  soundBankPrefab: {fileID: 3187738381392806732, guid: cf9514300c9bd5b4299026b61b861a30,
+    type: 3}
+  globalMusic1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1e8d8e9d5d100fb4ea0f6855d10c6e69,
+      type: 2}
+  globalMusic2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bb8502ff03d0ba24da5e1eba269c3537,
+      type: 2}
+  masterVolume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: eca6e2fd22c169945b02eedbc7e7f7bd,
+      type: 2}
+  musicVolume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 91b4d1223e4d9334fa123f6f402ee082,
+      type: 2}
+  sfxVolume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a195497b9eb4e214bb6bf8a894b3c667,
+      type: 2}

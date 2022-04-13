@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Global_Music1" ID="{B889C34C-5818-4E95-A405-D50AB6B8A302}">
+					<ChildrenList>
+						<Action Name="" ID="{3D52DBFF-4C3C-487B-B2DF-9A0B289BC9F9}" ShortID="239792203">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music1" ID="{62E565F5-C6AB-45A6-9A62-8B5BEBF7CBB9}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Global_Music2" ID="{D4C5F33D-05DD-42F9-ADEF-730861B9655B}">
+					<ChildrenList>
+						<Action Name="" ID="{7D002130-DB08-4429-BCC2-B58D482E03C4}" ShortID="507819809">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

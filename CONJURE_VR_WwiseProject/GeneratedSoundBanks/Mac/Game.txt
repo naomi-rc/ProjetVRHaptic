@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1620493657	Global_Music1			\Default Work Unit\Global_Music1	
+	1620493658	Global_Music2			\Default Work Unit\Global_Music2	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2145572834	GeneralState			\Default Work Unit\GeneralState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GeneralState			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	663160766	Visager - Factory Time [Loop]	C:\Users\jonny\Documents\_Ecole\Conjure\Projets_vr\CONJURE_VR\CONJURE_VR_WwiseProject\.cache\Mac\SFX\Visager - Factory Time [Loop]_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Global_music1\Visager - Factory Time [Loop]\Visager - Factory Time [Loop]		29451196
+	707946618	Visager - We Can Do It!	C:\Users\jonny\Documents\_Ecole\Conjure\Projets_vr\CONJURE_VR\CONJURE_VR_WwiseProject\.cache\Mac\SFX\Visager - We Can Do It!_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Global_music2\Visager - We Can Do It!\Visager - We Can Do It!		25100916
+

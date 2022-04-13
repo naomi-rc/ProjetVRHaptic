@@ -1,6 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}" SchemaVersion="103">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="Global_music1" ID="{62E565F5-C6AB-45A6-9A62-8B5BEBF7CBB9}" ShortID="313307239">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{072C868B-E4B7-49BF-B537-F32F0B105892}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{ECE017A5-3158-45E7-A397-56894138C92E}" WorkUnitID="{D77BD2DF-5580-4901-BEC5-7C41C487C1C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Visager - Factory Time [Loop]" ID="{5BBBEDAB-1396-422C-AF08-BBEC0D0B2FFE}" ShortID="1001435628">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="166956.530612245"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{072C868B-E4B7-49BF-B537-F32F0B105892}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D77BD2DF-5580-4901-BEC5-7C41C487C1C9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Visager - Factory Time [Loop]" ID="{53BA284E-8631-4984-A4EB-7BBBF13B4107}" ShortID="840613244">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D77BD2DF-5580-4901-BEC5-7C41C487C1C9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Visager - Factory Time [Loop]" ID="{39F958E4-F427-49A2-9C20-068AB26EBEC1}">
+											<Language>SFX</Language>
+											<AudioFile>Visager - Factory Time [Loop].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="663160766"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{2B4D665C-9899-42ED-8D59-4C64554DDC12}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9D5C8B0C-F772-4386-AF52-DBA3B0983D7E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Visager - Factory Time [Loop]" ID="{9F9656AA-1D71-4F51-A3CD-3E9123DFBF93}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="166956.530612245"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Visager - Factory Time [Loop]" ID="{39F958E4-F427-49A2-9C20-068AB26EBEC1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{C95EEA69-5E27-4549-A362-90A35D2DB952}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{4F21E2A8-684B-4056-8C13-A71BE1185052}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="166956.530612245"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GeneralState" ID="{D37D8A58-C3F7-40DA-96DB-ACE039FCC79A}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+					</StateInfo>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{539A4B77-B7B3-4BD0-ADB4-38EA7F69FFFE}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{E4C165BD-6D00-4097-BB89-5F9825AA0CEB}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{9618168D-195B-4A53-A683-BA27B53D98AD}" ShortID="686033752">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{4B0BACD9-ECCD-49BA-BB8C-9B4338534A92}" ShortID="314053186">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Visager - Factory Time [Loop]" ID="{5BBBEDAB-1396-422C-AF08-BBEC0D0B2FFE}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicPlaylistContainer Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" ShortID="537609132">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{072C868B-E4B7-49BF-B537-F32F0B105892}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D77BD2DF-5580-4901-BEC5-7C41C487C1C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Visager - We Can Do It!" ID="{8B789D35-D8C4-477E-A8A2-700FC0A5B54D}" ShortID="59961989">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="221577.705949305"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{072C868B-E4B7-49BF-B537-F32F0B105892}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D77BD2DF-5580-4901-BEC5-7C41C487C1C9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Visager - We Can Do It!" ID="{9D4BF240-17BE-4949-A42C-FFAC95C6527D}" ShortID="314299302">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D77BD2DF-5580-4901-BEC5-7C41C487C1C9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Visager - We Can Do It!" ID="{F29845BB-816F-485F-9C47-BCF54D8C5EF5}">
+											<Language>SFX</Language>
+											<AudioFile>Visager - We Can Do It!.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="707946618"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3633DB4D-54A6-4097-A55D-86A4F009BF9D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{185866E6-DB0D-4AD8-9AB2-5B413F77B451}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Visager - We Can Do It!" ID="{10D31F05-6835-4512-BDC3-11348DC8FB5B}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="142295.079365079"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Visager - We Can Do It!" ID="{F29845BB-816F-485F-9C47-BCF54D8C5EF5}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{0A18CA37-8FF2-4787-8262-C1BA8D9877AF}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{6432B1A5-2B89-4B6A-858C-29FEFE8C5785}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="140226.836932447"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{C1330E05-A6AF-4353-BB97-9F7E91246D62}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{2387DF12-6ABA-48E3-8323-257B6C9A2CA4}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{927D9664-149A-40FE-BE54-C83BBB90FE1C}" ShortID="86177461">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{BDA3AE84-C790-4EA7-AFC9-992B5F44F07C}" ShortID="596569849">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Visager - We Can Do It!" ID="{8B789D35-D8C4-477E-A8A2-700FC0A5B54D}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
