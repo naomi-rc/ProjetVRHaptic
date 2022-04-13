@@ -15,19 +15,22 @@ namespace AK
     {
         static const AkUniqueID GLOBAL_MUSIC1 = 1620493657U;
         static const AkUniqueID GLOBAL_MUSIC2 = 1620493658U;
+        static const AkUniqueID INIT_GLOBALMUSIC = 443137252U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace GENERALSTATE
+        namespace GLOBALSTATE
         {
-            static const AkUniqueID GROUP = 2145572834U;
+            static const AkUniqueID GROUP = 147967651U;
 
             namespace STATE
             {
+                static const AkUniqueID FIRST = 998496889U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID SECOND = 3476314365U;
             } // namespace STATE
-        } // namespace GENERALSTATE
+        } // namespace GLOBALSTATE
 
     } // namespace STATES
 

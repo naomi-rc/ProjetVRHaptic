@@ -14,6 +14,7 @@ namespace Game
         [Header("Soundtrack")]
         [SerializeField] private AK.Wwise.Event globalMusic1;
         [SerializeField] private AK.Wwise.Event globalMusic2;
+        [SerializeField] private AK.Wwise.Event globalMusic;
 
         [Header("RTPC")] 
         [SerializeField] private AK.Wwise.RTPC masterVolume;
@@ -30,5 +31,6 @@ namespace Game
         
         public AK.Wwise.Event GlobalMusic1Event => globalMusic1;
         public AK.Wwise.Event GlobalMusic2Event => globalMusic2;
+        public AK.Wwise.Event InitGlobalMusicEvent => globalMusic;
     }
 }

@@ -22,7 +22,7 @@
 					<ChildrenList>
 						<MusicSegment Name="Visager - Factory Time [Loop]" ID="{5BBBEDAB-1396-422C-AF08-BBEC0D0B2FFE}" ShortID="1001435628">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="166956.530612245"/>
+								<Property Name="EndPosition" Type="Real64" Value="190091.011113748"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -84,6 +84,27 @@
 									</ObjectLists>
 								</MusicTrack>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="GlobalState" ID="{B23965DF-1303-45EA-80BE-5A48880B8FEA}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Second" ID="{137A2EF3-E7C6-4230-A4A0-404310F50AE3}"/>
+										<CustomState Name="" ID="{55D3BC45-ACE7-45C1-B40B-CDF5AFB78CFB}" ShortID="67702981">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="First" ID="{FD90262A-81C3-4992-8807-EE8A6F5E93F3}"/>
+										<CustomState Name="" ID="{15476DBA-33BB-4025-B730-8B71CCBD002F}" ShortID="1068416269"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="Cues">
 									<Reference>
@@ -105,13 +126,6 @@
 							</ObjectLists>
 						</MusicSegment>
 					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="GeneralState" ID="{D37D8A58-C3F7-40DA-96DB-ACE039FCC79A}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-					</StateInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{539A4B77-B7B3-4BD0-ADB4-38EA7F69FFFE}">
 							<PropertyList>
@@ -217,6 +231,27 @@
 									</ObjectLists>
 								</MusicTrack>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="GlobalState" ID="{B23965DF-1303-45EA-80BE-5A48880B8FEA}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Second" ID="{137A2EF3-E7C6-4230-A4A0-404310F50AE3}"/>
+										<CustomState Name="" ID="{B1C3B963-B0CB-479D-B7EB-5BD853B49D17}" ShortID="1023415416"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="First" ID="{FD90262A-81C3-4992-8807-EE8A6F5E93F3}"/>
+										<CustomState Name="" ID="{27EA39F7-7D29-4AB1-B114-BA4A50717F42}" ShortID="693106904">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="Cues">
 									<Reference>

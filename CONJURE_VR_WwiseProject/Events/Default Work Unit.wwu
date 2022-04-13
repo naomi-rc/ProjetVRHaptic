@@ -5,10 +5,23 @@
 			<ChildrenList>
 				<Event Name="Global_Music1" ID="{B889C34C-5818-4E95-A405-D50AB6B8A302}">
 					<ChildrenList>
-						<Action Name="" ID="{3D52DBFF-4C3C-487B-B2DF-9A0B289BC9F9}" ShortID="239792203">
+						<Action Name="" ID="{85BFC695-E827-4D22-9A40-8052D29945BC}" ShortID="612131765">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Global_music1" ID="{62E565F5-C6AB-45A6-9A62-8B5BEBF7CBB9}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{73D1FDCE-EBD4-4A95-B52F-A8776D346E9B}" ShortID="106910427">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -16,7 +29,48 @@
 				</Event>
 				<Event Name="Global_Music2" ID="{D4C5F33D-05DD-42F9-ADEF-730861B9655B}">
 					<ChildrenList>
-						<Action Name="" ID="{7D002130-DB08-4429-BCC2-B58D482E03C4}" ShortID="507819809">
+						<Action Name="" ID="{285D61F2-9266-4520-A349-0002C33DFEA5}" ShortID="261776650">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music1" ID="{62E565F5-C6AB-45A6-9A62-8B5BEBF7CBB9}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A9F07C82-0F06-467A-95CC-36894969B9E3}" ShortID="641263965">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Init_GlobalMusic" ID="{F8699BC2-7AC9-457F-9199-ACB3CF8E4023}">
+					<ChildrenList>
+						<Action Name="" ID="{99A92C3C-1A22-497C-A0EB-E0153C050959}" ShortID="168631188">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music1" ID="{62E565F5-C6AB-45A6-9A62-8B5BEBF7CBB9}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F4646FAA-904C-4DE4-A082-63DCCA95450C}" ShortID="574179379">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CF31E105-AE3E-43FF-87B8-86F1AA2F44C0}" ShortID="1036714781">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="4"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>

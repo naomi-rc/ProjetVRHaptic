@@ -1,8 +1,9 @@
 ﻿using System.Linq;
 using _Scripts.Utils;
+using Game;
 using UnityEngine;
 
-namespace Game
+namespace _Scripts.Systems
 {
     public class SoundSystem : PersistentSingleton<SoundSystem>
     {
@@ -39,6 +40,7 @@ namespace Game
         
         public void PlayGlobalMusic1() => events.GlobalMusic1Event.Post(gameObject);
         public void PlayGlobalMusic2() => events.GlobalMusic2Event.Post(gameObject);
+        public void InitGlobalMusic() => events.InitGlobalMusicEvent.Post(gameObject);
 
         
         // ------ getter and setter of Volumes ------

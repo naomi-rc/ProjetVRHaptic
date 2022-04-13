@@ -3,9 +3,11 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{93327606-BB1E-4633-B5A9-8EA51848AB88}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="GeneralState" ID="{D37D8A58-C3F7-40DA-96DB-ACE039FCC79A}">
+				<StateGroup Name="GlobalState" ID="{B23965DF-1303-45EA-80BE-5A48880B8FEA}">
 					<ChildrenList>
-						<State Name="None" ID="{8AE9D536-FB77-45F8-A159-BC00BF412DDE}"/>
+						<State Name="None" ID="{D144523B-CE07-44BF-B767-703F44218DC4}"/>
+						<State Name="First" ID="{FD90262A-81C3-4992-8807-EE8A6F5E93F3}"/>
+						<State Name="Second" ID="{137A2EF3-E7C6-4230-A4A0-404310F50AE3}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
