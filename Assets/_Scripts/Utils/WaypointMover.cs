@@ -31,6 +31,11 @@ namespace _Scripts.Utils
         }
 
         private float fractionOfdistance= 0;
+
+        public void UpdateSpeed(float value)
+        {
+            speed = value;
+        }
         void Update()
         {
             if (isMoving)

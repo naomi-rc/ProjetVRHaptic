@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: dfd27bd780550149bec57c41c487c1c9
     GuidInternal: 
-    m_lastTime: -8585516489187585172
+    m_lastTime: -8585516423683206207
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -71,6 +71,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: a517e0ec5831e745a39756894138c92e
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: Room1
+      guid: 28e0d7349614204aba9a6f7fc0477e6d
+      id: 1359360137
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dfd27bd780550149bec57c41c487c1c9
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Room1
+        ObjectType: 1
+        guid: 28e0d7349614204aba9a6f7fc0477e6d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room1
+    - name: Room2
+      guid: cda9e2b023a12e4897661aaaedaf6a94
+      id: 1359360138
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dfd27bd780550149bec57c41c487c1c9
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Room2
+        ObjectType: 1
+        guid: cda9e2b023a12e4897661aaaedaf6a94
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room2
     - name: SFX
       guid: 88c83c811e67534794923004430cf6c4
       id: 393239870
@@ -128,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c43f5d121416ea49877374bc5a3c6119
     GuidInternal: 
-    m_lastTime: -8585516476283401495
+    m_lastTime: -8585516430805900343
     List:
     - name: Global_Music1
       guid: 4cc389b81858954ea405d50ab6b8a302
@@ -195,9 +229,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1e4ee321a47d414ca176ceab2ef028b1
       Path: Events\Default Work Unit\LadyAndGentlemen_Voice
-      maxAttenuation: 50
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 30
+      maxDuration: 0
+      minDuration: 0
     - name: MovingSound
       guid: b409ed7d4606ae4b8e43fce86d92f28b
       id: 566361864
@@ -212,7 +246,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b409ed7d4606ae4b8e43fce86d92f28b
       Path: Events\Default Work Unit\MovingSound
-      maxAttenuation: 50
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: StopAllSounds
@@ -397,7 +431,7 @@ MonoBehaviour:
     m_lastTime: -8585517162924795820
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000c0000000d0000000e0000000f00000010000000120000001400000016000000170000002500000026000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000c0000000d0000000f00000010000000120000001700000025000000260000004c0000004d0000004e000000fd000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

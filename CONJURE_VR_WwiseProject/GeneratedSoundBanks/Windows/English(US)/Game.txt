@@ -20,7 +20,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	63595845	628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm	C:\Users\jonny\Documents\_Ecole\Conjure\Projets_vr\CONJURE_VR\CONJURE_VR_WwiseProject\.cache\Windows\SFX\628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm		11289664
-	322319130	LadyAndGentlemen	C:\Users\jonny\Documents\_Ecole\Conjure\Projets_vr\CONJURE_VR\CONJURE_VR_WwiseProject\.cache\Windows\Voices\English(US)\627797__leonardmedia-nl__voice-sound-ladies-and-gentlemen-we-are-proudly-presenting_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\FarVoice\LadyAndGentlemen		757824
+	322319130	LadyAndGentlemen	C:\Users\jonny\Documents\_Ecole\Conjure\Projets_vr\CONJURE_VR\CONJURE_VR_WwiseProject\.cache\Windows\Voices\English(US)\627797__leonardmedia-nl__voice-sound-ladies-and-gentlemen-we-are-proudly-presenting_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\LadyAndGentlemen		757824
 	663160766	Visager - Factory Time [Loop]	C:\Users\jonny\Documents\_Ecole\Conjure\Projets_vr\CONJURE_VR\CONJURE_VR_WwiseProject\.cache\Windows\SFX\Visager - Factory Time [Loop]_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Global_music1\Visager - Factory Time [Loop]\Visager - Factory Time [Loop]		29451196
 	707946618	Visager - We Can Do It!	C:\Users\jonny\Documents\_Ecole\Conjure\Projets_vr\CONJURE_VR\CONJURE_VR_WwiseProject\.cache\Windows\SFX\Visager - We Can Do It!_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Global_music2\Visager - We Can Do It!\Visager - We Can Do It!		25100916
 
