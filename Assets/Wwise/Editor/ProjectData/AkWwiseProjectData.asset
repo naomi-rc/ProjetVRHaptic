@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: dfd27bd780550149bec57c41c487c1c9
     GuidInternal: 
-    m_lastTime: -8585517162926801169
+    m_lastTime: -8585516489187585172
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c43f5d121416ea49877374bc5a3c6119
     GuidInternal: 
-    m_lastTime: -8585516598375407926
+    m_lastTime: -8585516476283401495
     List:
     - name: Global_Music1
       guid: 4cc389b81858954ea405d50ab6b8a302
@@ -195,9 +195,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1e4ee321a47d414ca176ceab2ef028b1
       Path: Events\Default Work Unit\LadyAndGentlemen_Voice
-      maxAttenuation: 100
-      maxDuration: 8.591383
-      minDuration: 8.591383
+      maxAttenuation: 50
+      maxDuration: -1
+      minDuration: -1
     - name: MovingSound
       guid: b409ed7d4606ae4b8e43fce86d92f28b
       id: 566361864
@@ -212,7 +212,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b409ed7d4606ae4b8e43fce86d92f28b
       Path: Events\Default Work Unit\MovingSound
-      maxAttenuation: 100
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
     - name: StopAllSounds
@@ -397,7 +397,7 @@ MonoBehaviour:
     m_lastTime: -8585517162924795820
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000003000000040000000500000006000000070000000c0000000d0000000e0000000f00000010000000120000001400000016000000170000002500000026000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000c0000000d0000000e0000000f00000010000000120000001400000016000000170000002500000026000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -81,10 +81,10 @@
 				</Event>
 				<Event Name="MovingSound" ID="{7DED09B4-0646-4BAE-8E43-FCE86D92F28B}">
 					<ChildrenList>
-						<Action Name="" ID="{5A514069-28A2-41D6-B314-794B96632E9D}" ShortID="288078122">
+						<Action Name="" ID="{F50B6647-5348-418E-86DB-4456F0D719BD}" ShortID="608150391">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MovingSound" ID="{2BC29959-2BC5-4CB8-9651-759E933736A9}" WorkUnitID="{DB24359A-2786-4F46-A93D-F9872458B380}"/>
+									<ObjectRef Name="628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm" ID="{F973D219-0772-4230-8FFE-477FA920F4E8}" WorkUnitID="{DB24359A-2786-4F46-A93D-F9872458B380}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
