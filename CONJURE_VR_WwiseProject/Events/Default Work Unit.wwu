@@ -90,6 +90,27 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="LadyAndGentlemen_Voice" ID="{21E34E1E-7DA4-4C41-A176-CEAB2EF028B1}">
+					<ChildrenList>
+						<Action Name="" ID="{8B23033E-188D-42D5-A7FF-68EB0937F400}" ShortID="40340156">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FarVoice" ID="{3E4B0876-7A20-4E69-9DCD-2F8D4C03522C}" WorkUnitID="{DB24359A-2786-4F46-A93D-F9872458B380}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopAllSounds" ID="{5DF4BA09-05F3-45FC-A3CF-C147C21BA6CF}">
+					<ChildrenList>
+						<Action Name="" ID="{6FE6DF13-322A-48DD-8E03-80383B43B9BF}" ShortID="755509473">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

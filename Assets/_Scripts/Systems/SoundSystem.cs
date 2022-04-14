@@ -41,6 +41,7 @@ namespace _Scripts.Systems
         public void PlayGlobalMusic1() => events.GlobalMusic1Event.Post(gameObject);
         public void PlayGlobalMusic2() => events.GlobalMusic2Event.Post(gameObject);
         public void InitGlobalMusic() => events.InitGlobalMusicEvent.Post(gameObject);
+        public void StopAllSound() => events.StopAllEvent.Post(gameObject);
 
 
         // ------ getter and setter of Volumes ------

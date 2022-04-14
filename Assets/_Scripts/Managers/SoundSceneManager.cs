@@ -8,15 +8,20 @@ namespace _Scripts.Managers
     public class SoundSceneManager : Singleton<SoundSceneManager>
     {
         [SerializeField] private GameObject movingGameObject;
+        [SerializeField] private GameObject farGameObject;
+
         private AkAmbient movingAmbiantSound;
-        
+        private AkAmbient farAmbiantSound;
+
         private bool isPlayingFirstMusic = true;
         private bool isMovingMusicPlaying = false;
-        
+        private bool isFarSoundPlaying = false;
+
         private void Start()
         {
             SoundSystem.Instance.InitGlobalMusic();
             movingAmbiantSound = movingGameObject.GetComponent<AkAmbient>();
+            farAmbiantSound = farGameObject.GetComponent<AkAmbient>();
         }
 
 
@@ -29,8 +34,8 @@ namespace _Scripts.Managers
         public void ToggleMovingMusic()
         {
             isMovingMusicPlaying = !isMovingMusicPlaying;
-            
-            if(isMovingMusicPlaying)
+
+            if (isMovingMusicPlaying)
                 movingAmbiantSound.HandleEvent(movingGameObject);
             else
                 movingAmbiantSound.Stop(1);
@@ -46,13 +51,27 @@ namespace _Scripts.Managers
             SoundSystem.Instance.SetMusicVolume(volume);
         }
 
+        public void ToggleFarSound()
+        {
+            isFarSoundPlaying = !isFarSoundPlaying;
+
+            if (isFarSoundPlaying)
+                farAmbiantSound.HandleEvent(farGameObject);
+            else
+                farAmbiantSound.Stop(1);
+        }
+
+        public void StopAllSound()
+        {
+            SoundSystem.Instance.StopAllSound();
+        }
+
         private void UpdateGlobalMusic()
         {
-            if(isPlayingFirstMusic)
+            if (isPlayingFirstMusic)
                 SoundSystem.Instance.PlayGlobalMusic1();
             else
-                SoundSystem.Instance.PlayGlobalMusic2();  
-            
+                SoundSystem.Instance.PlayGlobalMusic2();
         }
     }
 }

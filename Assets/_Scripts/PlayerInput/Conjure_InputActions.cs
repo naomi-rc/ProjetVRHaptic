@@ -73,6 +73,15 @@ namespace UnityEngine.InputSystem
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""StopSound"",
+                    ""type"": ""Button"",
+                    ""id"": ""a0a5d1fc-9e50-4aef-9beb-13d41d409728"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -313,8 +322,19 @@ namespace UnityEngine.InputSystem
                     ""path"": ""<Keyboard>/m"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Mute"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""91b603c3-1c11-4c83-aeb0-872d16d0270c"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""StopSound"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -907,6 +927,7 @@ namespace UnityEngine.InputSystem
             m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
             m_Player_Fire2 = m_Player.FindAction("Fire2", throwIfNotFound: true);
             m_Player_Mute = m_Player.FindAction("Mute", throwIfNotFound: true);
+            m_Player_StopSound = m_Player.FindAction("StopSound", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -983,6 +1004,7 @@ namespace UnityEngine.InputSystem
         private readonly InputAction m_Player_Fire;
         private readonly InputAction m_Player_Fire2;
         private readonly InputAction m_Player_Mute;
+        private readonly InputAction m_Player_StopSound;
         public struct PlayerActions
         {
             private @Conjure_InputActions m_Wrapper;
@@ -992,6 +1014,7 @@ namespace UnityEngine.InputSystem
             public InputAction @Fire => m_Wrapper.m_Player_Fire;
             public InputAction @Fire2 => m_Wrapper.m_Player_Fire2;
             public InputAction @Mute => m_Wrapper.m_Player_Mute;
+            public InputAction @StopSound => m_Wrapper.m_Player_StopSound;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1016,6 +1039,9 @@ namespace UnityEngine.InputSystem
                     @Mute.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMute;
                     @Mute.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMute;
                     @Mute.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMute;
+                    @StopSound.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStopSound;
+                    @StopSound.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStopSound;
+                    @StopSound.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStopSound;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -1035,6 +1061,9 @@ namespace UnityEngine.InputSystem
                     @Mute.started += instance.OnMute;
                     @Mute.performed += instance.OnMute;
                     @Mute.canceled += instance.OnMute;
+                    @StopSound.started += instance.OnStopSound;
+                    @StopSound.performed += instance.OnStopSound;
+                    @StopSound.canceled += instance.OnStopSound;
                 }
             }
         }
@@ -1196,6 +1225,7 @@ namespace UnityEngine.InputSystem
             void OnFire(InputAction.CallbackContext context);
             void OnFire2(InputAction.CallbackContext context);
             void OnMute(InputAction.CallbackContext context);
+            void OnStopSound(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {

@@ -16,7 +16,9 @@ namespace AK
         static const AkUniqueID GLOBAL_MUSIC1 = 1620493657U;
         static const AkUniqueID GLOBAL_MUSIC2 = 1620493658U;
         static const AkUniqueID INIT_GLOBALMUSIC = 443137252U;
+        static const AkUniqueID LADYANDGENTLEMEN_VOICE = 2141726946U;
         static const AkUniqueID MOVINGSOUND = 566361864U;
+        static const AkUniqueID STOPALLSOUNDS = 1416937818U;
     } // namespace EVENTS
 
     namespace STATES

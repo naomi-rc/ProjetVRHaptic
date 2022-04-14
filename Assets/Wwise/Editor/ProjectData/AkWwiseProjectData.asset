@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 603873cbb0e2e640ae86707803b36090
     GuidInternal: 
-    m_lastTime: -8585516949051148354
+    m_lastTime: -8585516593931391928
     List:
     - name: Game
       guid: 7888d29746e5494cad6b6d2428925339
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c43f5d121416ea49877374bc5a3c6119
     GuidInternal: 
-    m_lastTime: -8585516951983860751
+    m_lastTime: -8585516598375407926
     List:
     - name: Global_Music1
       guid: 4cc389b81858954ea405d50ab6b8a302
@@ -181,6 +181,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: LadyAndGentlemen_Voice
+      guid: 1e4ee321a47d414ca176ceab2ef028b1
+      id: 2141726946
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c43f5d121416ea49877374bc5a3c6119
+      - ElementName: LadyAndGentlemen_Voice
+        ObjectType: 3
+        guid: 1e4ee321a47d414ca176ceab2ef028b1
+      Path: Events\Default Work Unit\LadyAndGentlemen_Voice
+      maxAttenuation: 100
+      maxDuration: 8.591383
+      minDuration: 8.591383
     - name: MovingSound
       guid: b409ed7d4606ae4b8e43fce86d92f28b
       id: 566361864
@@ -196,8 +213,25 @@ MonoBehaviour:
         guid: b409ed7d4606ae4b8e43fce86d92f28b
       Path: Events\Default Work Unit\MovingSound
       maxAttenuation: 100
-      maxDuration: 64
-      minDuration: 64
+      maxDuration: -1
+      minDuration: -1
+    - name: StopAllSounds
+      guid: 09baf45df305fc45a3cfc147c21ba6cf
+      id: 1416937818
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c43f5d121416ea49877374bc5a3c6119
+      - ElementName: StopAllSounds
+        ObjectType: 3
+        guid: 09baf45df305fc45a3cfc147c21ba6cf
+      Path: Events\Default Work Unit\StopAllSounds
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

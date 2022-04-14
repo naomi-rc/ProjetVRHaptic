@@ -11,10 +11,10 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Language="SFX" Hash="1522380893">
+		<SoundBank Id="702482391" Language="English(US)" Hash="3072257445">
 			<ObjectPath>\SoundBanks\Default Work Unit\Game</ObjectPath>
 			<ShortName>Game</ShortName>
-			<Path>Game.bnk</Path>
+			<Path>English(US)\Game.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1620493657" Name="Global_Music1" ObjectPath="\Events\Default Work Unit\Global_Music1" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1620493658" Name="Global_Music2" ObjectPath="\Events\Default Work Unit\Global_Music2" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
@@ -30,6 +30,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2141726946" Name="LadyAndGentlemen_Voice" ObjectPath="\Events\Default Work Unit\LadyAndGentlemen_Voice" MaxAttenuation="100." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="322319130" Language="English(US)">
+							<ShortName>627797__leonardmedia-nl__voice-sound-ladies-and-gentlemen-we-are-proudly-presenting.wav</ShortName>
+							<Path>Voices\English(US)\627797__leonardmedia-nl__voice-sound-ladies-and-gentlemen-we-are-proudly-presenting_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="566361864" Name="MovingSound" ObjectPath="\Events\Default Work Unit\MovingSound" MaxAttenuation="100." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="63595845" Language="SFX">
@@ -38,6 +46,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\StopAllSounds" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="2282894569">

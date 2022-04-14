@@ -34,9 +34,20 @@ namespace _Scripts.Player
             SoundSceneManager.Instance.ToggleGlobalMusic();
         }
 
+        /// <summary>
+        /// Called with "m" key
+        /// </summary>
         public void OnMute()
         {
             SoundSceneManager.Instance.ToggleMuteMusic();
+        }
+
+        /// <summary>
+        /// Called with "n" key
+        /// </summary>
+        public void OnStopSound()
+        {
+            SoundSceneManager.Instance.StopAllSound();
         }
 
     }

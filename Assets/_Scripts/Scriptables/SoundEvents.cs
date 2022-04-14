@@ -10,6 +10,8 @@ namespace Game
         
         // [Header("SFX")]
         // [SerializeField] private AK.Wwise.Event bababooey;
+        
+        [SerializeField] private AK.Wwise.Event stopAll;
 
         [Header("Soundtrack")]
         [SerializeField] private AK.Wwise.Event globalMusic1;
@@ -32,5 +34,6 @@ namespace Game
         public AK.Wwise.Event GlobalMusic1Event => globalMusic1;
         public AK.Wwise.Event GlobalMusic2Event => globalMusic2;
         public AK.Wwise.Event InitGlobalMusicEvent => globalMusic;
+        public AK.Wwise.Event StopAllEvent => stopAll;
     }
 }

@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundBankPrefab: {fileID: 3187738381392806732, guid: cf9514300c9bd5b4299026b61b861a30,
     type: 3}
+  stopAll:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ac0f71538b998264796bf8c12a5dcf95,
+      type: 2}
   globalMusic1:
     idInternal: 0
     valueGuidInternal: 
@@ -28,11 +33,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e0d6f0829cfad344ab09740e5766dc06,
-      type: 2}
-  movingSound:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4ebc8b38cc93bfc48865ff547851e904,
       type: 2}
   masterVolume:
     idInternal: 0
