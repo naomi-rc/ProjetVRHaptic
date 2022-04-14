@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Global_Music2" ID="{D4C5F33D-05DD-42F9-ADEF-730861B9655B}" WorkUnitID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Init_GlobalMusic" ID="{F8699BC2-7AC9-457F-9199-ACB3CF8E4023}" WorkUnitID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MovingSound" ID="{7DED09B4-0646-4BAE-8E43-FCE86D92F28B}" WorkUnitID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Global_Music1" ID="{B889C34C-5818-4E95-A405-D50AB6B8A302}" WorkUnitID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

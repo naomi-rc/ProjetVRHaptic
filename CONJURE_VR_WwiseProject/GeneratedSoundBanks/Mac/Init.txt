@@ -1,8 +1,10 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	2145572834	GeneralState			\Default Work Unit\GeneralState	
+	147967651	GlobalState			\Default Work Unit\GlobalState	
 
 State	ID	Name	State Group			Notes
-	748895195	None	GeneralState			
+	748895195	None	GlobalState			
+	998496889	First	GlobalState			
+	3476314365	Second	GlobalState			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Default Work Unit\Music_Volume	

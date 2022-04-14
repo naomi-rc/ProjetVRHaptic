@@ -4,6 +4,7 @@
 		<UserProjectSettings Name="" ID="{19F48FD6-CB4D-4798-B2A5-1555133942BD}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\jonny\Documents\_Ecole\Conjure\Projets_vr\CONJURE_VR\CONJURE_VR_WwiseProject\Originals\Music\"/>
+				<Property Name="Event Action List\{7DED09B4-0646-4BAE-8E43-FCE86D92F28B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B889C34C-5818-4E95-A405-D50AB6B8A302}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D4C5F33D-05DD-42F9-ADEF-730861B9655B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F8699BC2-7AC9-457F-9199-ACB3CF8E4023}\x64_Expand States" Type="string" Value=""/>

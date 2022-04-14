@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="702482391" Language="SFX" Hash="4169188497">
+		<SoundBank Id="702482391" Language="SFX" Hash="1522380893">
 			<ObjectPath>\SoundBanks\Default Work Unit\Game</ObjectPath>
 			<ShortName>Game</ShortName>
 			<Path>Game.bnk</Path>
@@ -27,6 +27,14 @@
 						<File Id="707946618" Language="SFX">
 							<ShortName>Visager - We Can Do It!.wav</ShortName>
 							<Path>SFX\Visager - We Can Do It!_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="566361864" Name="MovingSound" ObjectPath="\Events\Default Work Unit\MovingSound" MaxAttenuation="100." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="63595845" Language="SFX">
+							<ShortName>628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm.wav</ShortName>
+							<Path>SFX\628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -17,6 +17,10 @@
 							<ObjectRef Name="Init_GlobalMusic" ID="{F8699BC2-7AC9-457F-9199-ACB3CF8E4023}" WorkUnitID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}"/>
 							<Position X="2" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="MovingSound" ID="{7DED09B4-0646-4BAE-8E43-FCE86D92F28B}" WorkUnitID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -33,7 +37,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{D144523B-CE07-44BF-B767-703F44218DC4}"/>
+						<CurrentStateRef Name="First" ID="{FD90262A-81C3-4992-8807-EE8A6F5E93F3}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

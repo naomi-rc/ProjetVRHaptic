@@ -42,7 +42,7 @@ namespace _Scripts.Systems
         public void PlayGlobalMusic2() => events.GlobalMusic2Event.Post(gameObject);
         public void InitGlobalMusic() => events.InitGlobalMusicEvent.Post(gameObject);
 
-        
+
         // ------ getter and setter of Volumes ------
         public void SetMasterVolume(float volume) => events.MasterVolumeParam.SetValue(gameObject, volume * 100);
         public void SetMusicVolume(float volume) => events.MusicVolumeParam.SetValue(gameObject, volume * 100);

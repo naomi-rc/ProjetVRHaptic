@@ -29,6 +29,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e0d6f0829cfad344ab09740e5766dc06,
       type: 2}
+  movingSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4ebc8b38cc93bfc48865ff547851e904,
+      type: 2}
   masterVolume:
     idInternal: 0
     valueGuidInternal: 

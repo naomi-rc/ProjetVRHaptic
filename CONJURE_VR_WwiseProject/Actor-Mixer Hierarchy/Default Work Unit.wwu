@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DB24359A-2786-4F46-A93D-F9872458B380}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{DB24359A-2786-4F46-A93D-F9872458B380}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DB24359A-2786-4F46-A93D-F9872458B380}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="MovingSound" ID="{2BC29959-2BC5-4CB8-9651-759E933736A9}" ShortID="702937158">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Attenuation1" ID="{CFCC209B-AC06-4E0F-9147-36FB9F9801F0}" WorkUnitID="{2B3DFFA8-ED63-4D96-82AB-B24AE5807094}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{072C868B-E4B7-49BF-B537-F32F0B105892}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{813CC888-671E-4753-9492-3004430CF6C4}" WorkUnitID="{D77BD2DF-5580-4901-BEC5-7C41C487C1C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm" ID="{F973D219-0772-4230-8FFE-477FA920F4E8}" ShortID="517351463">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuation1" ID="{CFCC209B-AC06-4E0F-9147-36FB9F9801F0}" WorkUnitID="{2B3DFFA8-ED63-4D96-82AB-B24AE5807094}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{072C868B-E4B7-49BF-B537-F32F0B105892}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D77BD2DF-5580-4901-BEC5-7C41C487C1C9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm" ID="{7DDA3BB6-CCB4-4BD7-971F-B26B0C6F3BBC}">
+									<Language>SFX</Language>
+									<AudioFile>628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="63595845"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm" ID="{7DDA3BB6-CCB4-4BD7-971F-B26B0C6F3BBC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{1700C03E-6EE2-4F11-94A1-E54A2FB3B998}">
+							<ChildrenList>
+								<Path2D Name="MovingSound_Path" ID="{43A87F01-FD91-4241-B416-F38C687285AA}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
