@@ -146,7 +146,7 @@ GameObject:
   m_Layer: 0
   m_Name: FarSound
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -404,7 +404,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint1
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1062,7 +1062,7 @@ GameObject:
   m_Layer: 0
   m_Name: MovingSound
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2888,7 +2888,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!114 &946488699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3386,8 +3386,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032823931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2059, y: 5.4601, z: 24.58}
-  m_LocalScale: {x: 16.301456, y: 11.92094, z: 14.94905}
+  m_LocalPosition: {x: -0.2059, y: 5.4601, z: 25.8749}
+  m_LocalScale: {x: 16.301456, y: 11.92094, z: 12.358471}
   m_Children: []
   m_Father: {fileID: 497726855}
   m_RootOrder: 5
@@ -3658,7 +3658,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &1221520594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3966,8 +3966,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254557181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6223, y: 1.1332, z: 16.5}
-  m_LocalScale: {x: 13.488195, y: 4.9619155, z: 3.6195426}
+  m_LocalPosition: {x: -0.6223, y: 1.1332, z: 18.6946}
+  m_LocalScale: {x: 13.488195, y: 4.9619155, z: 8.008636}
   m_Children: []
   m_Father: {fileID: 497726855}
   m_RootOrder: 6
