@@ -31,7 +31,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="V/5IihawDEOUqypIMpX0Zw=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="eIjSl0blSUyta20kKJJTOQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="20dtfwWLMUyzOPLUFEWkzQEnumP/////8MeoMaKl80211G2OZpEeWwEnumP/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="20dtfwWLMUyzOPLUFEWkzQEn69f/////8MeoMaKl80211G2OZpEeWwEn69f/////"/>
 				<Property Name="Interactive Music\x64_{5BBBEDAB-1396-422C-AF08-BBEC0D0B2FFE} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D97GD4ipsT5Pw3WjYOZuRhAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{8B789D35-D8C4-477E-A8A2-700FC0A5B54D} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D/dflr78S3/PxC+fXSYAh1AAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
@@ -73,7 +73,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ89/Se9eAVQFJvsV8QcSHwck="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="WZnCK8UruEyWUXWekzc2qXYISz4gemlOnc0vjUwDUiyaNSTbhidGT6k9+YckWLOA"/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="mjUk24YnRk+pPfmHJFizgA=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="xD9dEhQW6kmHc3S8WjxhGQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>

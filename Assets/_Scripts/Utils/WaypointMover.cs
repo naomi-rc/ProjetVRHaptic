@@ -17,12 +17,12 @@ namespace _Scripts.Utils
         bool m_CurrentWaypointIs1 = false;
         
         private float startTime;
-        private float distaneBetween;
+        private float DistanceBetween { get; set; }
 
         void Start()
         {
             startTime = Time.time;
-            distaneBetween = Vector3.Distance(waypoint1.position, waypoint2.position);
+            DistanceBetween = Vector3.Distance(waypoint1.position, waypoint2.position);
         }
 
         public void ToggleMoving()

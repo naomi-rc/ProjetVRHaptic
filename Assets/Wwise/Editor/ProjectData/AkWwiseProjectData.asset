@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: b33e359a00731044811e97bbe2a9ef8b
     GuidInternal: 
-    m_lastTime: -8585517162924790818
+    m_lastTime: -8585499010645584277
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: dfd27bd780550149bec57c41c487c1c9
     GuidInternal: 
-    m_lastTime: -8585516423683206207
+    m_lastTime: -8585499010647999615
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 603873cbb0e2e640ae86707803b36090
     GuidInternal: 
-    m_lastTime: -8585516593931391928
+    m_lastTime: -8585499010645739577
     List:
     - name: Game
       guid: 7888d29746e5494cad6b6d2428925339
@@ -162,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c43f5d121416ea49877374bc5a3c6119
     GuidInternal: 
-    m_lastTime: -8585516430805900343
+    m_lastTime: -8585499010651270765
     List:
     - name: Global_Music1
       guid: 4cc389b81858954ea405d50ab6b8a302
@@ -230,8 +230,8 @@ MonoBehaviour:
         guid: 1e4ee321a47d414ca176ceab2ef028b1
       Path: Events\Default Work Unit\LadyAndGentlemen_Voice
       maxAttenuation: 30
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: MovingSound
       guid: b409ed7d4606ae4b8e43fce86d92f28b
       id: 566361864
@@ -278,7 +278,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 431a8c5dec2b564b817489f0706d82b9
     GuidInternal: 
-    m_lastTime: -8585517162928856527
+    m_lastTime: -8585499010651240761
     List:
     - name: Master_Volume
       guid: f62ddc5593f5434f86e8e7b822007e99
@@ -334,7 +334,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 067632931ebb3346b5a98ea51848ab88
     GuidInternal: 
-    m_lastTime: -8585517162924805825
+    m_lastTime: -8585499010645674254
     List:
     - name: GlobalState
       guid: df6539b20313ea4580be5a48880b8fea
@@ -414,7 +414,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5e55723b60cd046bd0ca3b9ca965861
     GuidInternal: 
-    m_lastTime: -8585517162924800821
+    m_lastTime: -8585499010645654293
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -428,10 +428,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 8902530110c61245a34e415680717a51
     GuidInternal: 
-    m_lastTime: -8585517162924795820
+    m_lastTime: -8585499010645624286
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000c0000000d0000000f00000010000000120000001700000025000000260000004c0000004d0000004e000000fd000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
