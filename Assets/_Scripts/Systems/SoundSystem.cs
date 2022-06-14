@@ -9,7 +9,7 @@ namespace _Scripts.Systems
     {
         private const string SOUNDS_FOLDER_PATH = "Globals";
 
-        private SoundEvents events;
+        private SoundEvents _events;
 
         protected override void Awake()
         {
@@ -29,30 +29,27 @@ namespace _Scripts.Systems
                 Debug.LogWarning(
                     $"More than one object of type {nameof(SoundEvents)} was found in the folder {SOUNDS_FOLDER_PATH}. Taking the first one.");
 
-            events = soundEvents.First();
+            _events = soundEvents.First();
         }
 
         private void LoadBank()
         {
-            Instantiate(events.SoundBankPrefab, transform);
+            Instantiate(_events.SoundBankPrefab, transform);
         }
 
-        //public void PlayBababooeySound() => events.BababooeyEvent.Post(gameObject);
-        
-        
-        public void PlayGlobalMusic1() => events.GlobalMusic1Event.Post(gameObject);
-        public void PlayGlobalMusic2() => events.GlobalMusic2Event.Post(gameObject);
-        public void InitGlobalMusic() => events.InitGlobalMusicEvent.Post(gameObject);
-        public void StopAllSound() => events.StopAllEvent.Post(gameObject);
+        public void PlayGlobalMusic1() => _events.GlobalMusic1Event.Post(gameObject);
+        public void PlayGlobalMusic2() => _events.GlobalMusic2Event.Post(gameObject);
+        public void InitGlobalMusic() => _events.InitGlobalMusicEvent.Post(gameObject);
+        public void StopAllSound() => _events.StopAllEvent.Post(gameObject);
 
 
         // ------ getter and setter of Volumes ------
-        public void SetMasterVolume(float volume) => events.MasterVolumeParam.SetValue(gameObject, volume * 100);
-        public void SetMusicVolume(float volume) => events.MusicVolumeParam.SetValue(gameObject, volume * 100);
-        public void SetSfxVolume(float volume) => events.SfxVolumeParam.SetValue(gameObject, volume * 100);
+        public void SetMasterVolume(float volume) => _events.MasterVolumeParam.SetValue(gameObject, volume * 100);
+        public void SetMusicVolume(float volume) => _events.MusicVolumeParam.SetValue(gameObject, volume * 100);
+        public void SetSfxVolume(float volume) => _events.SfxVolumeParam.SetValue(gameObject, volume * 100);
 
-        public float GetMasterVolume() => events.MasterVolumeParam.GetValue(gameObject) / 100f;
-        public float GetMusicVolume() => events.MusicVolumeParam.GetValue(gameObject) / 100f;
-        public float GetSfxVolume() => events.SfxVolumeParam.GetValue(gameObject) / 100f;
+        public float GetMasterVolume() => _events.MasterVolumeParam.GetValue(gameObject) / 100f;
+        public float GetMusicVolume() => _events.MusicVolumeParam.GetValue(gameObject) / 100f;
+        public float GetSfxVolume() => _events.SfxVolumeParam.GetValue(gameObject) / 100f;
     }
 }
