@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{125D3FC4-1614-49EA-8773-74BC5A3C6119}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Global_Music1" ID="{B889C34C-5818-4E95-A405-D50AB6B8A302}">
+					<ChildrenList>
+						<Action Name="" ID="{85BFC695-E827-4D22-9A40-8052D29945BC}" ShortID="612131765">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="5"/>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music1" ID="{62E565F5-C6AB-45A6-9A62-8B5BEBF7CBB9}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{73D1FDCE-EBD4-4A95-B52F-A8776D346E9B}" ShortID="106910427">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="4"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Global_Music2" ID="{D4C5F33D-05DD-42F9-ADEF-730861B9655B}">
+					<ChildrenList>
+						<Action Name="" ID="{285D61F2-9266-4520-A349-0002C33DFEA5}" ShortID="261776650">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="4"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music1" ID="{62E565F5-C6AB-45A6-9A62-8B5BEBF7CBB9}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A9F07C82-0F06-467A-95CC-36894969B9E3}" ShortID="641263965">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="5"/>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Init_GlobalMusic" ID="{F8699BC2-7AC9-457F-9199-ACB3CF8E4023}">
+					<ChildrenList>
+						<Action Name="" ID="{99A92C3C-1A22-497C-A0EB-E0153C050959}" ShortID="168631188">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music1" ID="{62E565F5-C6AB-45A6-9A62-8B5BEBF7CBB9}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F4646FAA-904C-4DE4-A082-63DCCA95450C}" ShortID="574179379">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CF31E105-AE3E-43FF-87B8-86F1AA2F44C0}" ShortID="1036714781">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Global_music2" ID="{0E714AF2-6CFD-4638-8F4F-C9575BCA087E}" WorkUnitID="{D86B1FA5-8A33-43C2-B13F-D1FAD85959E3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MovingSound" ID="{7DED09B4-0646-4BAE-8E43-FCE86D92F28B}">
+					<ChildrenList>
+						<Action Name="" ID="{F50B6647-5348-418E-86DB-4456F0D719BD}" ShortID="608150391">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="628025__josefpres__random-synth-loop-232-wet-long-loop-120-bpm" ID="{F973D219-0772-4230-8FFE-477FA920F4E8}" WorkUnitID="{DB24359A-2786-4F46-A93D-F9872458B380}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LadyAndGentlemen_Voice" ID="{21E34E1E-7DA4-4C41-A176-CEAB2EF028B1}">
+					<ChildrenList>
+						<Action Name="" ID="{8B23033E-188D-42D5-A7FF-68EB0937F400}" ShortID="40340156">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LadyAndGentlemen" ID="{EE3EFB6F-1B11-4B02-BE8C-55C5E4A02663}" WorkUnitID="{DB24359A-2786-4F46-A93D-F9872458B380}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopAllSounds" ID="{5DF4BA09-05F3-45FC-A3CF-C147C21BA6CF}">
+					<ChildrenList>
+						<Action Name="" ID="{6FE6DF13-322A-48DD-8E03-80383B43B9BF}" ShortID="755509473">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
