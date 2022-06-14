@@ -8,8 +8,8 @@ namespace Game
         [Header("Soundbank")] 
         [SerializeField] private GameObject soundBankPrefab;
         
-        // [Header("SFX")]
-        // [SerializeField] private AK.Wwise.Event bababooey;
+        [Header("SFX")]
+        [SerializeField, Tooltip("Empty AK.Wwise.Event")] private AK.Wwise.Event exampleSound;
         
         [SerializeField] private AK.Wwise.Event stopAll;
 
