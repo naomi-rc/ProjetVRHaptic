@@ -6,7 +6,9 @@ public class ArcadeGame : ScriptableObject
 
     public string gameName;
     public string playerName = "GUEST";
-    public Texture2D gameIcon;
+    public Sprite gameIcon;
     public string gameDescription;
+    public string gameSceneName;
+    public Color menuCanvasColor;
 
 }
