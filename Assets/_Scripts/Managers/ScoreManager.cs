@@ -76,7 +76,7 @@ public class ScoreManager : MonoBehaviour
         transformList.Add(entryTransform);
     }
 
-    public void testSaveScore()
+    public void SaveScore()
     {
         SaveCurrentScore(arcadeGame.playerName, GetScore());
     }
@@ -144,5 +144,4 @@ public class ScoreManager : MonoBehaviour
             return y.score.CompareTo(x.score);
         }
     }
-
 }
