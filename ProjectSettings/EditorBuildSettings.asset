@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/dev/Naomi/MainMenu.unity
+    guid: 520945b885712434981c8584634f3d88
+  - enabled: 1
     path: Assets/Scenes/dev/Naomi/SampleScene.unity
     guid: 40642c9824799994a9e84283f046d301
   - enabled: 0
