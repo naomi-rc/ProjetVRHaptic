@@ -1,6 +1,4 @@
 ﻿using System;
-using _Scripts.Managers;
-using _Scripts.Systems;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -31,7 +29,7 @@ namespace _Scripts.Player
 
         private void FireSwitchSong(InputAction.CallbackContext obj)
         {
-            SoundSceneManager.Instance.ToggleGlobalMusic();
+            //SoundSceneManager.Instance.ToggleGlobalMusic();
         }
 
         /// <summary>
@@ -39,7 +37,7 @@ namespace _Scripts.Player
         /// </summary>
         public void OnMute()
         {
-            SoundSceneManager.Instance.ToggleMuteMusic();
+            //SoundSceneManager.Instance.ToggleMuteMusic();
         }
 
         /// <summary>
@@ -47,7 +45,7 @@ namespace _Scripts.Player
         /// </summary>
         public void OnStopSound()
         {
-            SoundSceneManager.Instance.StopAllSound();
+            //SoundSceneManager.Instance.StopAllSound();
         }
 
     }
