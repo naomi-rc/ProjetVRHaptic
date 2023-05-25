@@ -31,8 +31,8 @@ public class WristMenu : MonoBehaviour
         }
         else
         {
-            wristUI.SetActive(false);
-            wristMenuActive = false;
+            wristUI.SetActive(true);
+            wristMenuActive = true;
         }                
     }
 
