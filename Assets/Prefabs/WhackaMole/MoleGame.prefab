@@ -2873,6 +2873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 1
   dissolveSpeed: 0.5
+  attachedTransfrom: {fileID: 0}
 --- !u!1 &2967751514991025444
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace _Scripts.Utils
 {
@@ -18,15 +19,31 @@ namespace _Scripts.Utils
         float dissolve = 0f;
         bool isReturning = false;
 
+        public Transform attachedTransfrom;
+
         void Start()
         {
-            materials = new List<Material>();
             initPos = transform.position;
             initRot = transform.rotation;
+            materials = new List<Material>();
             materials.Add(GetComponent<MeshRenderer>().material);
             foreach (var renderer in GetComponentsInChildren<MeshRenderer>())
                 materials.Add(renderer.material);
+            Init(transform);
+        }
+
+        public void ReInit(SelectEnterEventArgs arg)
+        {
+            var tf = arg.interactorObject.transform;
+            Init(tf);
+        }
+
+        void Init(Transform tf)
+        {
+            attachedTransfrom = tf;
+            StopCoroutine(ReturnIfTooFar());
             StartCoroutine(ReturnIfTooFar());
+
         }
 
         private void Update()
@@ -40,6 +57,7 @@ namespace _Scripts.Utils
             {
                 transform.position = initPos;
                 transform.rotation = initRot;
+                attachedTransfrom = transform;
             }
 
             foreach(var material in materials)
@@ -50,7 +68,7 @@ namespace _Scripts.Utils
         {
             while(true)
             {
-                if (Vector3.Distance(transform.position, initPos) > maxDistance)
+                if (Vector3.Distance(transform.position, attachedTransfrom.position) > maxDistance)
                 {
                     isReturning = true;
                 } else
