@@ -29,14 +29,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3822142652512900125}
-  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
-  m_LocalPosition: {x: -0, y: 0.396, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7452433, z: 0, w: 0.66679263}
+  m_LocalPosition: {x: 1.37, y: 0, z: -1}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 6090786869465844772}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 96.36, z: 0}
 --- !u!33 &715774666087186690
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -169,6 +169,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Popups, Assembly-CSharp
+        m_MethodName: StartSpawnPopups
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: _Scripts.Utils.AutoReturn, Assembly-CSharp
+        m_MethodName: ReInit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -256,6 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 1
   dissolveSpeed: 0.5
+  attachedTransfrom: {fileID: 0}
 --- !u!1 &5021503820117859680
 GameObject:
   m_ObjectHideFlags: 0
