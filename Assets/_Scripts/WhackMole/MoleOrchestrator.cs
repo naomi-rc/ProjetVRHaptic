@@ -79,7 +79,7 @@ public class MoleOrchestrator : MonoBehaviour
                 newMole.transform.localPosition = new Vector3(transform.localPosition.x - offset.x * numCols / 2 + offset.x * j,
                                                          transform.localPosition.y - offset.y * numRows/2 + offset.y * i,
                                                          0);
-                //newMole.transform.rotation = transform.rotation;
+                newMole.transform.rotation = transform.rotation;
                 moles[i, j] = moleObj;
             }
         }
