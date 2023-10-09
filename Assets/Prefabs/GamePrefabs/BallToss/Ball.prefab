@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5971714270869204484}
   - component: {fileID: 7439542699010696841}
   - component: {fileID: 3376424129999665670}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,5 +241,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e8a9b2ceed2614fa3ddca0c83596da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshholdObject: {fileID: 0}
+  threshholdPosition: {x: 0, y: 0, z: 0}
   MAX_DISTANCE: 5

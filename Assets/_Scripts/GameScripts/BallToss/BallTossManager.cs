@@ -57,8 +57,9 @@ public class BallTossManager : MonoBehaviour
         
     }
 
-    private void ResetGame()
+    public void ResetGame()
     {
+        score = 0;
         Destroy(gameCans);
         gameCans = Instantiate(gameCansPrefab, gameCansParentTransform);
         Destroy(gameBalls);
