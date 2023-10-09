@@ -119,6 +119,17 @@ public class ScoreManager : MonoBehaviour
     public void ResetBoardScore()
     {
         scoreText.text = "YOUR SCORE :";
+        SetScore(0);
+    }
+
+    public void SetStateWin()
+    {
+        scoreText.text = "YOU WIN!";
+    }
+
+    public void SetStateLose()
+    {
+        scoreText.text = "YOU LOSE";
     }
 
     private class HighScores
