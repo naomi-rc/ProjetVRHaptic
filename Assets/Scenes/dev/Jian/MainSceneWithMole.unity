@@ -13799,6 +13799,31 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 196991969}
+    - target: {fileID: 169493659057084538, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 169493659057084538, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169493659057084538, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8023462156330614784}
+    - target: {fileID: 169493659057084538, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ReInit
+      objectReference: {fileID: 0}
+    - target: {fileID: 169493659057084538, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: _Scripts.Utils.AutoReturn, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2152442771416354840, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13879,6 +13904,31 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 196991969}
+    - target: {fileID: 8033578621273908918, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033578621273908918, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033578621273908918, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8023462156330614784}
+    - target: {fileID: 8033578621273908918, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ReInit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033578621273908918, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: _Scripts.Utils.AutoReturn, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8140304633618919124, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13886,3 +13936,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a34f1d77d2a75444b0d8eff5a02fb88, type: 3}
+--- !u!114 &8023462156330614784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 169493659057084537, guid: 1a34f1d77d2a75444b0d8eff5a02fb88,
+    type: 3}
+  m_PrefabInstance: {fileID: 8023462156330614783}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5165794bfd7bae141aa974d3d4fdc05b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
