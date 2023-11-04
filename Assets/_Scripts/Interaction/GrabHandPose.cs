@@ -14,9 +14,19 @@ public class GrabHandPose : MonoBehaviour
     private Quaternion[] _startingFingerRotations;
     private Quaternion[] _finalFingerRotations;
 
+    private Rigidbody _rb;
+    private RigidbodyConstraints _constraints;
+    private bool _isFrozen = true;
+
     // Start is called before the first frame update
     void Start()
     {
+        // pour éviter que les darts bougent tout seul au début, on bloque leur rotation et position
+        // (on enregistre les contraintes établies de bases pour les remettre lorsque l'on interragit avec l'objet)
+        _rb = GetComponent<Rigidbody>();
+        _constraints = _rb.constraints;
+        _rb.constraints = RigidbodyConstraints.FreezeAll;
+
         _grabInteractable = GetComponent<XRGrabInteractable>();
         _grabInteractable.selectEntered.AddListener(SetupPose);
         _grabInteractable.selectExited.AddListener(UnsetPose);
@@ -28,6 +38,14 @@ public class GrabHandPose : MonoBehaviour
     {
         if(arg.interactorObject is XRRayInteractor)
         {
+            // on regarde la rotation et la position de l'objet sont encore bloqués
+            if (_isFrozen)
+            {
+                // s'ils le sont encore, on remet les contraintes de départs et on indique que l'objet n'est plus bloqué
+                _rb.constraints = _constraints;
+                _isFrozen = false;
+            }
+
             HandData handData = arg.interactorObject.transform.GetComponentInChildren<HandData>();
             handData.animator.enabled = false;
 
