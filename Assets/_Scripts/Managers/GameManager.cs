@@ -17,6 +17,9 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     int pointForBadHit = -1;
 
+    [SerializeField]
+    Popups popups;
+
     public void HandleBadMoleHit()
     {
         score += 1;
@@ -27,6 +30,7 @@ public class GameManager : Singleton<GameManager>
     {
         score -= 1;
         scoreManager.UpdateScore(pointForBadHit);
+        popups.Popup();
     }
 
 

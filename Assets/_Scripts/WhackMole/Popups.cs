@@ -22,7 +22,7 @@ public class Popups : MonoBehaviour
     float lingerInterval = 3f;
 
     [SerializeField]
-    int spawnTotal = 5;
+    int spawnTotal = 1;
 
     List<GameObject> spawnedPopups;
 
@@ -46,6 +46,7 @@ public class Popups : MonoBehaviour
             Vector3 direction = facingTarget.position - position;
 
             spawnedPopups.Add(Instantiate(randomPopup, position, Quaternion.LookRotation(direction)));
+            StartCoroutine(DestroyPopup(spawnedPopups[spawnedPopups.Count - 1]));
         }
     }
 
@@ -59,18 +60,24 @@ public class Popups : MonoBehaviour
             spawnCount++;
         }
 
-        yield return DestroyPopup();
+        // yield return DestroyPopup();
 
     }
 
-    IEnumerator DestroyPopup()
+    //IEnumerator DestroyPopup()
+    //{
+    //    yield return new WaitForSeconds(lingerInterval);
+    //    foreach (var popup in spawnedPopups)
+    //    {
+    //        Destroy(popup);
+    //    }
+
+    //}
+
+    IEnumerator DestroyPopup(GameObject popup)
     {
         yield return new WaitForSeconds(lingerInterval);
-        foreach (var popup in spawnedPopups)
-        {
-            Destroy(popup);
-        }
-
+        Destroy(popup);
     }
 
     public void StartSpawnPopups()

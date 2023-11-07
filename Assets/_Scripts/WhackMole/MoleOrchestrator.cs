@@ -1,14 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MoleOrchestrator : MonoBehaviour
 {
-    [SerializeField]
-    int numRows = 5;
 
     [SerializeField]
-    int numCols = 5;
+    List<MoleDifficulty> difficultyLevels;
 
     [SerializeField]
     Vector2 offset = new Vector2(1, 1);
@@ -20,30 +19,17 @@ public class MoleOrchestrator : MonoBehaviour
     List<GameObject> goodMolePrefab;
 
     [SerializeField]
-    float spawnInterval = 1f;
-
-    [SerializeField]
-    SpawnMode spawnMode;
-
-    [SerializeField]
-    [Tooltip("Approximately how much percentage of good mole there should be")]
-    float goodMoleRatio = 0.5f;
-
-    [SerializeField]
     bool startAutomatically = false;
 
     static bool hasStarted = false;
 
-    enum SpawnMode { RANDOM };
+    public int currentDifficultyLevel = 0;
 
-    public Mole[,] moles;
+
+
+    public GameObject[,] moles;
 
     float timer = 0f;
-
-    void Awake()
-    {
-        moles = new Mole[numRows, numCols];
-    }
 
     private void Start()
     {
@@ -57,14 +43,16 @@ public class MoleOrchestrator : MonoBehaviour
             return;
         else
             hasStarted = true;
+        var curLevel = difficultyLevels[currentDifficultyLevel];
+        moles = new GameObject[curLevel.numRows, curLevel.numCols];
         float goodMoleCount = 0f;
         float badMoleCount = 0f;
-        for (int i = 0; i < numRows; i++)
+        for (int i = 0; i < curLevel.numRows; i++)
         {
-            for (int j = 0; j < numCols; j++)
+            for (int j = 0; j < curLevel.numCols; j++)
             {
-                float weight = goodMoleCount / (goodMoleCount + badMoleCount + 0.001f) - goodMoleRatio;
-                bool spawnBadMole = Random.Range(0f, 2f - weight) <= 1f;
+                float weight = goodMoleCount / (goodMoleCount + badMoleCount + 0.001f) - curLevel.goodMoleRatio;
+                bool spawnBadMole = UnityEngine.Random.Range(0f, 2f - weight) <= 1f;
 
                 if (spawnBadMole)
                     badMoleCount++;
@@ -72,34 +60,70 @@ public class MoleOrchestrator : MonoBehaviour
                     goodMoleCount++;
 
                 var molePrefab = spawnBadMole ?
-                    badMolePrefab[Random.Range(0, badMolePrefab.Count)] :
-                    goodMolePrefab[Random.Range(0, goodMolePrefab.Count)]; ;
+                    badMolePrefab[UnityEngine.Random.Range(0, badMolePrefab.Count)] :
+                    goodMolePrefab[UnityEngine.Random.Range(0, goodMolePrefab.Count)]; ;
                 var newMole = Instantiate(molePrefab, transform);
-                var moleObj = newMole.GetComponentInChildren<Mole>();
-                newMole.transform.localPosition = new Vector3(transform.localPosition.x - offset.x * numCols / 2 + offset.x * j,
-                                                         transform.localPosition.y - offset.y * numRows/2 + offset.y * i,
+                //var moleObj = newMole.GetComponentInChildren<Mole>();
+                newMole.transform.localPosition = new Vector3(transform.localPosition.x - offset.x * curLevel.numCols / 2 + offset.x * j,
+                                                         transform.localPosition.y - offset.y * curLevel.numRows /2 + offset.y * i,
                                                          0);
                 newMole.transform.rotation = transform.rotation;
-                moles[i, j] = moleObj;
+                moles[i, j] = newMole;
             }
         }
 
-        if (spawnMode == SpawnMode.RANDOM)
-            StartCoroutine(SpawnRandomMole());
+        StartCoroutine(SpawnRandomMole());
 
-        // TODO: increase difficulty as time goes on
+        StartCoroutine(IncreaseDifficulty());
+    }
+
+    public void StopGame()
+    {
+        var curLevel = difficultyLevels[currentDifficultyLevel];
+        StopCoroutine(SpawnRandomMole());
+        for (int i = 0; i < curLevel.numRows; i++)
+        {
+            for (int j = 0; j < curLevel.numCols; j++)
+            {
+                Destroy(moles[i, j].gameObject);
+            }
+        }
+        hasStarted = false;
+        moles = null;
+
+    }
+
+    public void DropHammer()
+    {
+        StopGame();
+        StopAllCoroutines();
+        currentDifficultyLevel = 0;
+    }
+
+    IEnumerator IncreaseDifficulty()
+    {
+        var curLevel = difficultyLevels[currentDifficultyLevel];
+        yield return new WaitForSeconds(curLevel.duration);
+
+        if (currentDifficultyLevel + 1 < difficultyLevels.Count)
+        {
+            StopGame();
+            currentDifficultyLevel += 1;
+            StartGame();
+        }
     }
 
     IEnumerator SpawnRandomMole()
     {
+        var curLevel = difficultyLevels[currentDifficultyLevel];
         while (true)
         {
-            if (timer > spawnInterval)
+            if (timer > curLevel.spawnInterval)
             {
-                int i = Random.Range(0, numRows);
-                int j = Random.Range(0, numCols);
+                int i = UnityEngine.Random.Range(0, curLevel.numRows);
+                int j = UnityEngine.Random.Range(0, curLevel.numCols);
 
-                moles[i, j].isWhackable = true;
+                moles[i, j].GetComponentInChildren<Mole>().isWhackable = true;
                 timer = 0f;
             }
             timer += Time.deltaTime;
