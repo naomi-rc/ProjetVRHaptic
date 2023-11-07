@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class MoleOrchestrator : MonoBehaviour
@@ -21,18 +22,20 @@ public class MoleOrchestrator : MonoBehaviour
     [SerializeField]
     bool startAutomatically = false;
 
+    [SerializeField]
+    Transform player;
+
     static bool hasStarted = false;
 
     public int currentDifficultyLevel = 0;
 
-
+    Popups popup;
 
     public GameObject[,] moles;
 
-    float timer = 0f;
-
     private void Start()
     {
+        popup = new Popups();
         if (startAutomatically)
             StartGame();
     }
@@ -58,17 +61,31 @@ public class MoleOrchestrator : MonoBehaviour
                     badMoleCount++;
                 else
                     goodMoleCount++;
-
+                
                 var molePrefab = spawnBadMole ?
                     badMolePrefab[UnityEngine.Random.Range(0, badMolePrefab.Count)] :
-                    goodMolePrefab[UnityEngine.Random.Range(0, goodMolePrefab.Count)]; ;
-                var newMole = Instantiate(molePrefab, transform);
-                //var moleObj = newMole.GetComponentInChildren<Mole>();
-                newMole.transform.localPosition = new Vector3(transform.localPosition.x - offset.x * curLevel.numCols / 2 + offset.x * j,
-                                                         transform.localPosition.y - offset.y * curLevel.numRows /2 + offset.y * i,
-                                                         0);
-                newMole.transform.rotation = transform.rotation;
-                moles[i, j] = newMole;
+                    goodMolePrefab[UnityEngine.Random.Range(0, goodMolePrefab.Count)];
+                if (curLevel.spawnMode == MoleDifficulty.SpawnMode.POPUP)
+                {
+
+                    var newMole = popup.SpawnAroundPositionTowardTarget(transform, curLevel.spawnRadius, player.position, molePrefab);
+                    newMole.transform.localPosition = new Vector3(transform.localPosition.x - offset.x * curLevel.numCols / 2 + offset.x * j,
+                                                          transform.localPosition.y - offset.y * curLevel.numRows / 2 + offset.y * i,
+                                                          0);
+                    newMole.GetComponentInChildren<Mole>().heightAxis = -newMole.transform.forward;
+                    newMole.SetActive(false);
+                    moles[i, j] = newMole;
+                }
+                else
+                {
+                    var newMole = Instantiate(molePrefab, transform);
+                    newMole.transform.localPosition = new Vector3(transform.localPosition.x - offset.x * curLevel.numCols / 2 + offset.x * j,
+                                                             transform.localPosition.y - offset.y * curLevel.numRows / 2 + offset.y * i,
+                                                             0);
+                    newMole.transform.rotation = transform.rotation;
+                    moles[i, j] = newMole;
+                }
+ 
             }
         }
 
@@ -111,6 +128,13 @@ public class MoleOrchestrator : MonoBehaviour
             currentDifficultyLevel += 1;
             StartGame();
         }
+        else
+        {
+            GameManager.Instance.GameClear();
+            StopGame();
+            StopAllCoroutines();
+            currentDifficultyLevel = 0;
+        }
     }
 
     IEnumerator SpawnRandomMole()
@@ -118,16 +142,20 @@ public class MoleOrchestrator : MonoBehaviour
         var curLevel = difficultyLevels[currentDifficultyLevel];
         while (true)
         {
-            if (timer > curLevel.spawnInterval)
-            {
-                int i = UnityEngine.Random.Range(0, curLevel.numRows);
-                int j = UnityEngine.Random.Range(0, curLevel.numCols);
 
-                moles[i, j].GetComponentInChildren<Mole>().isWhackable = true;
-                timer = 0f;
+            int i = UnityEngine.Random.Range(0, curLevel.numRows);
+            int j = UnityEngine.Random.Range(0, curLevel.numCols);
+            if (curLevel.spawnMode == MoleDifficulty.SpawnMode.POPUP)
+            {
+                moles[i, j].SetActive(true);
             }
-            timer += Time.deltaTime;
-            yield return null;
+            moles[i, j].GetComponentInChildren<Mole>().isWhackable = true;
+
+            yield return new WaitForSeconds(curLevel.spawnInterval);
+            if (curLevel.spawnMode == MoleDifficulty.SpawnMode.POPUP)
+            {
+                moles[i, j].SetActive(false);
+            }
         }
     }
 

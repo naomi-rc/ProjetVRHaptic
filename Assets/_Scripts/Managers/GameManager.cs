@@ -33,5 +33,10 @@ public class GameManager : Singleton<GameManager>
         popups.Popup();
     }
 
+    public void GameClear()
+    {
+        scoreManager.SaveCurrentScore("new player", score);
+    }
+
 
 }

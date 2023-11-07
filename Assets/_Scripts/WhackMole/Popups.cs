@@ -7,22 +7,22 @@ public class Popups : MonoBehaviour
 {
 
     [SerializeField]
-    List<GameObject> popupPrefabs;
+    public List<GameObject> popupPrefabs;
 
     [SerializeField]
-    float spawnRadius = 5;
+    public float spawnRadius = 5;
 
     [SerializeField]
-    Transform facingTarget;
+    public Transform facingTarget;
 
     [SerializeField]
-    float spawnInterval = 0.5f;
+    public float spawnInterval = 0.5f;
 
     [SerializeField]
-    float lingerInterval = 3f;
+    public float lingerInterval = 3f;
 
     [SerializeField]
-    int spawnTotal = 1;
+    public int spawnTotal = 1;
 
     List<GameObject> spawnedPopups;
 
@@ -39,15 +39,39 @@ public class Popups : MonoBehaviour
             int randomIndex = Random.Range(0, popupPrefabs.Count);
             GameObject randomPopup = popupPrefabs[randomIndex];
 
-            Vector3 position = transform.position;
-            position.x += Random.Range(-spawnRadius, spawnRadius);
-            position.y += Random.Range(-spawnRadius, spawnRadius);
-            position.z += Random.Range(-spawnRadius, spawnRadius);
-            Vector3 direction = facingTarget.position - position;
-
-            spawnedPopups.Add(Instantiate(randomPopup, position, Quaternion.LookRotation(direction)));
+            var newObject = SpawnAroundPositionTowardTarget(transform.position, spawnRadius, facingTarget.position, randomPopup);
+            spawnedPopups.Add(newObject);
             StartCoroutine(DestroyPopup(spawnedPopups[spawnedPopups.Count - 1]));
         }
+    }
+
+    public GameObject SpawnAroundPositionTowardTarget(Vector3 position, float radius, Vector3 facingPosition, GameObject spawnObject)
+    {
+        Vector3 popupPosition = position;
+        popupPosition.x += Random.Range(-radius, radius);
+        popupPosition.y += Random.Range(-radius, radius);
+        popupPosition.z += Random.Range(-radius, radius);
+
+        Vector3 direction = facingPosition - popupPosition;
+        return Instantiate(spawnObject, popupPosition, Quaternion.LookRotation(direction));
+    } 
+    
+    public GameObject SpawnAroundPositionTowardTarget(Transform tf, float radius, Vector3 facingPosition, GameObject spawnObject)
+    {
+        Vector3 popupPosition = tf.position;
+        popupPosition.x += Random.Range(-radius, radius);
+        popupPosition.y += Random.Range(-radius, radius);
+        popupPosition.z += Random.Range(-radius, radius);
+
+        Vector3 direction = facingPosition - popupPosition;
+        
+        var obj = Instantiate(spawnObject, tf);
+        obj.transform.position = popupPosition;
+        // hack for moles
+        obj.transform.rotation = Quaternion.Euler(90, 180, 0);
+        obj.transform.Rotate(Quaternion.LookRotation(direction).eulerAngles);
+
+        return obj;
     }
 
     IEnumerator SpawnPopups()

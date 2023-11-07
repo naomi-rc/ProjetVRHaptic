@@ -8,6 +8,7 @@ public class MoleDifficulty : ScriptableObject
     public float spawnInterval = 1f;
     public float goodMoleRatio = 0.5f;
     public float duration = 10f;
+    public float spawnRadius = 0.2f;
     public enum SpawnMode { RANDOM, POPUP };
     public SpawnMode spawnMode = SpawnMode.RANDOM;
 }
